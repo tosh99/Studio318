@@ -1,0 +1,58 @@
+/* Buttons */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $pri_font_family, $sec_font_family;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    width: fit-content;
+    padding: 0;
+
+    span {
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+
+    img {
+        height: 24px;
+        margin: 0 5px;
+    }
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+// Outlined
+button.outline {
+    background: white;
+    color: red;
+    border: 1px solid red;
+}
+
+button.nooutline {
+    background: white;
+    color: red;
+    border: none;
+}
+
+button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.snackbars .snack {
+    min-height: 28px;
+    border-radius: 5px;
+}

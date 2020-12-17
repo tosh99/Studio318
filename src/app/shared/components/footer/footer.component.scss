@@ -1,0 +1,66 @@
+@import "src/styles";
+
+.app-footer {
+    width: 100vw;
+    height: 636px; // Override for Mobile
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .app-footer-content {
+        width: 980px; // Override for Mobile
+        display: flex;
+        flex-direction: column;
+
+        .contact-details {
+            display: flex;
+            justify-content: space-between; // Override for Mobile
+            margin-bottom: 110px; // Override for Mobile
+
+            .left {
+                width: 380px; // Override for Mobile
+                display: flex;
+                flex-direction: column;
+                color: $white;
+
+                h2 {
+                    margin-bottom: 33px; // Override for Mobile
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+
+                .input-item {
+                    margin-bottom: 44px; // Override for Mobile
+                    width: 380px; // Override for Mobile
+                }
+            }
+        }
+
+        .social-profile {
+            display: flex;
+            justify-content: space-between;
+            width: 734px; // Override for Mobile
+            margin: auto;
+            margin-bottom: 42px; // Override for Mobile
+
+            button {
+                color: $dark-gray;
+            }
+
+        }
+
+        .copyright {
+            color: #5F5F5F;
+            font-size: 10px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    }
+
+}

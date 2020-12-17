@@ -1,0 +1,140 @@
+$pri_font_family: 'Work Sans';
+$sec_font_family: serif;
+
+// Desktop
+@media only screen and (min-width: 1280px) {
+    h1 {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 120%;
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    p.bodybig {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    p.body1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    p.body2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    p.subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    p.caption {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    p.specialtext {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    button {
+        font-size: 36px;
+    }
+
+
+}
+
+// Tablet View
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    h1 {
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    p.caption {
+        font-size: 1em;
+    }
+}
+
+// Mobile View
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    p.caption {
+        font-size: 1em;
+    }
+
+    p.quotes {
+        font-size: 1.25em;
+    }
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+

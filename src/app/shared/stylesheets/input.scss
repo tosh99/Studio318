@@ -1,0 +1,27 @@
+.input-item {
+    display: flex;
+    border-bottom: 4px solid $white;
+    padding-bottom: 10px;
+
+    input {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $light-gray;
+        background: transparent;
+        border: none;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $light-gray;
+    }
+}
+
+
+input:focus {
+    border: none;
+    outline: none;
+}
