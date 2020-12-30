@@ -1,0 +1,45 @@
+.banner {
+    display: flex;
+    height: 100vh;
+    background: url(../../assets/banners/landing/landing.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 508px; // Override for Mobile
+    background: black;
+
+
+    .sld-content {
+        width: 1077px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        .sldc-left {
+            width: 580px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-family: DXRigraf, sans-serif;
+                font-size: 37px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+
+    }
+}
+
+.seo-friendly {
+    height: 200vh; // Override for Mobile
+    background: white;
+}

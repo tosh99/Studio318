@@ -1,0 +1,36 @@
+<div class="app-header">
+    <div class="app-header-content">
+        <div class="app-header-left">
+            <a href="/">
+                <img src="assets/icons/brand/logo.svg" *ngIf="isLogoVisible">
+            </a>
+        </div>
+        <div class="app-header-right">
+            <img src="assets/icons/header/menu.svg" (click)="toggleModal()">
+        </div>
+    </div>
+</div>
+
+
+<div class="menu" *ngIf="viewMenu">
+    <div class="app-header">
+        <div class="app-header-content">
+            <div class="app-header-left">
+                <img src="assets/icons/brand/logo.svg">
+            </div>
+            <div class="app-header-right">
+                <img src="assets/icons/header/menu-white.svg" (click)="toggleModal()">
+            </div>
+        </div>
+    </div>
+
+    <div class="items">
+        <a href="/work">
+            <header>Work</header>
+        </a>
+        <header>About</header>
+        <header>Contact</header>
+    </div>
+
+</div>
+

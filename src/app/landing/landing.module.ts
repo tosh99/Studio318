@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LandingRoutingModule } from './landing-routing.module';
 import { LandingComponent } from './landing.component';
 import {FooterModule} from '../shared/components/footer/footer.module';
+import {HeaderModule} from "../shared/components/header/header.module";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import {FooterModule} from '../shared/components/footer/footer.module';
     imports: [
         CommonModule,
         LandingRoutingModule,
-        FooterModule
+        FooterModule,
+        HeaderModule
     ]
 })
 export class LandingModule { }
