@@ -1,6 +1,6 @@
 @keyframes rotate {
     0% {
-        transform: rotate(50deg);
+        transform: rotate(100deg);
     }
 
     100% {
@@ -10,7 +10,7 @@
 
 @keyframes rotaterev {
     0% {
-        transform: rotate(-50deg);
+        transform: rotate(-100deg);
     }
 
     100% {
@@ -27,7 +27,6 @@
         background: black;
     }
 }
-
 
 .app-header {
     display: flex;
@@ -56,7 +55,6 @@
     }
 }
 
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -75,7 +73,7 @@
                 img {
                     width: 39.76px;
                     animation: 0.5s rotate;
-                    margin-right: 16px;
+                    margin-right: 11px;
                     margin-top: 5px;
                 }
             }
@@ -105,3 +103,9 @@
     }
 }
 
+@media only screen and (max-width: 540px) {
+    .app-header {
+        width: 100%;
+        padding: 25px;
+    }
+}

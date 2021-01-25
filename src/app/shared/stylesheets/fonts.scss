@@ -101,31 +101,63 @@ $sec_font_family: serif;
 // Mobile View
 @media only screen and (max-width: 767px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 40px;
+        line-height: 120%;
     }
 
     h2 {
         font-size: 32px;
+        line-height: 120%;
     }
 
     h3 {
-        font-size: 1.75em;
+        font-size: 24px;
+        line-height: 120%;
     }
 
     h4 {
-        font-size: 1.5em;
+        font-size: 20px;
+        line-height: 120%;
     }
 
-    p {
-        font-size: 1em;
+    p.bodybig {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    p.body1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    p.body2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    p.subtitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
     }
 
     p.caption {
-        font-size: 1em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
     }
 
-    p.quotes {
-        font-size: 1.25em;
+    p.specialtext {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    button {
+        font-size: 36px;
     }
 }
 

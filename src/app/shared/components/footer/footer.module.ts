@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FooterComponent} from './footer.component';
+import {AnimateInModule} from 'ngx-animate-in';
 
 
 @NgModule({
@@ -10,7 +10,9 @@ import { FooterComponent } from './footer.component';
         FooterComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        AnimateInModule
     ]
 })
-export class FooterModule { }
+export class FooterModule {
+}

@@ -1,30 +1,35 @@
 @import "src/styles";
 
 .app-footer {
-    height: 636px; // Override for Mobile
+    min-height: 636px;
     background: black;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .app-footer-content {
-        width: 980px; // Override for Mobile
+        width: 980px;
         display: flex;
         flex-direction: column;
 
         .contact-details {
             display: flex;
-            justify-content: space-between; // Override for Mobile
-            margin-bottom: 110px; // Override for Mobile
+            justify-content: space-between;
+            margin-bottom: 110px;
 
             .left {
-                width: 380px; // Override for Mobile
+                width: 380px;
                 display: flex;
                 flex-direction: column;
                 color: $white;
 
                 h2 {
-                    margin-bottom: 33px; // Override for Mobile
+                    font-family: DXRigraf, sans-serif;
+                    margin-bottom: 33px;
+                }
+
+                p {
+                    font-family: neue-haas-grotesk-text, sans-serif;
                 }
             }
 
@@ -33,8 +38,8 @@
                 flex-direction: column;
 
                 .input-item {
-                    margin-bottom: 44px; // Override for Mobile
-                    width: 380px; // Override for Mobile
+                    margin-bottom: 44px;
+                    width: 380px;
                 }
             }
         }
@@ -42,9 +47,9 @@
         .social-profile {
             display: flex;
             justify-content: space-between;
-            width: 734px; // Override for Mobile
+            width: 734px;
             margin: auto;
-            margin-bottom: 42px; // Override for Mobile
+            margin-bottom: 42px;
 
             button {
                 color: $dark-gray;
@@ -61,7 +66,45 @@
             text-align: center;
             text-transform: uppercase;
         }
-
     }
+}
 
+
+@media only screen and (max-width: 540px) {
+    .app-footer {
+        min-height: 1009px;
+
+        .app-footer-content {
+            width: 100%;
+            padding: 25px;
+
+            .contact-details {
+                flex-direction: column;
+
+                .left {
+                    width: 100%;
+                    margin-bottom: 89px;
+                    text-align: center;
+                }
+
+                .right {
+                    align-items: center;
+
+                    .input-item {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .social-profile {
+                width: 100%;
+                flex-wrap: wrap;
+
+                button {
+                    width: 146px;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
 }

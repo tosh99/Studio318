@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="app-header-right">
-            <img src="assets/icons/header/menu.svg" (click)="toggleModal()">
+            <img src="assets/icons/header/menu.svg" *ngIf="!viewMenu" (click)="toggleModal()">
         </div>
     </div>
 </div>
@@ -28,7 +28,9 @@
         <a href="/work">
             <header>Work</header>
         </a>
-        <header>About</header>
+        <a href="/about">
+            <header>About</header>
+        </a>
         <header>Contact</header>
     </div>
 
